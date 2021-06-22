@@ -23,6 +23,7 @@ html {
 }
 
 body {
+    display: flex;
     height: 100vh;
     /*VH = View Height*/
     /*VW = View Width*/
