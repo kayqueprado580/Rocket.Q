@@ -69,7 +69,7 @@ button,
 
 button,
 .button {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     line-height: 0;
     display: flex;
@@ -98,6 +98,21 @@ button.outlined,
     color: var(--blue);
     border: .2rem solid var(--blue);
 }
+
+button.red,
+.button.red {
+    background: var(--red);
+    color: var(--white);
+}
+
+button .grey,
+.button.grey {
+    background: var(--grey-light);
+    color: var(--grey-dark);
+}
+
+
+/* Header */
 
 .content header {
     width: 80%;
