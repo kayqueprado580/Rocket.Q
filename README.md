@@ -1,5 +1,5 @@
 # NLW
-Projeto criado para o evento NLW da Rocketseat
+Projeto criado para o evento NLW#6 da Rocketseat
 
 Hospedado em heroku: https://rocky-badlands-82188.herokuapp.com/
 
