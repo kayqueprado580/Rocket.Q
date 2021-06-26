@@ -2,7 +2,14 @@ const express = require('express')
 const route = require('./route')
 const server = express()
 const path = require('path')
+const session = require('express-session');
 
+server.use(session({
+    cookie: { maxAge: 60000 },
+    secret: 'woot',
+    resave: false,
+    saveUninitialized: false
+}));
 
 //setando view engine
 server.set('view engine', 'ejs')

@@ -45,9 +45,13 @@ module.exports = {
         res.render("room", { roomId, roomId, questions: questions, questionsRead: questionsRead, isNoQuestions: isNoQuestions })
     },
 
-    enter(req, res) {
-        const roomId = req.body.roomId
-        if (roomId != '') {
+    async enter(req, res) {
+        let roomId = req.body.roomId
+
+        const db = await Database()
+        const rooms = await db.all(`SELECT * FROM rooms where id = ${roomId}`)
+        await db.close()
+        if (rooms.length > 0) {
             res.redirect(`/room/${roomId}`)
         } else {
             res.redirect('/')
