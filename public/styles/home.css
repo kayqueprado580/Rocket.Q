@@ -93,3 +93,17 @@ button,
     bottom: -15rem;
     right: 5.6rem;
 }
+
+@media (max-width: 960px) {
+    .content {
+        display: grid;
+        grid-template-columns: 40% 50%;
+        grid-template-rows: 11.4rem 1fr;
+        grid-template-areas: 'header header' 'left right';
+    }
+    #bg {
+        grid-area: left;
+        background: url('/images/home-bg-img.svg') no-repeat top/contain;
+        background-position-x: -5rem;
+    }
+}

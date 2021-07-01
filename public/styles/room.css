@@ -175,3 +175,27 @@
     margin-top: 1.3rem;
     line-height: 1.9rem;
 }
+
+@media (max-width: 960px) {
+    #logoResolution {
+        width: 9rem !important;
+    }
+    #room header .buttons .button:nth-child(1) {
+        font-size: 1.2rem;
+        margin-right: .8rem;
+        padding: .4rem .8rem;
+    }
+    #room header .buttons .button:nth-child(1) img {
+        margin-left: 1rem;
+        width: 1rem;
+        height: 1rem;
+    }
+    #room header .buttons .button:nth-child(2) {
+        font-size: 1rem;
+        padding: .6rem 2.2rem;
+    }
+    #room header .buttons .button:nth-child(2) img {
+        width: 1rem;
+        height: 1rem;
+    }
+}
